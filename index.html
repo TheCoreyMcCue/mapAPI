@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Geocoder</title>
+    <link rel="shortcut icon" href="data:image/x-icon;" type="image/x-icon">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <h1>Location Search</h1>
+
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-8">
+          <form id="searchLocation">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Search Anywhere in the World</label>
+              <input type="text" class="form-control" id="searchBox" placeholder="Enter a location">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+          <h2  class="mt-2">Latitude: <span id="lat"></span> </h2>
+        <h2  class="mt-2">Longitude: <span id="long"></span></h2>
+        <div id="map" style="height: 300px; width: 600px"></div>
+        </div>  
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
