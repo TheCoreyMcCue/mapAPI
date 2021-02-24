@@ -14,7 +14,7 @@ searchLocation.addEventListener('submit', (event) => {
       console.log(data.features[0].center);
       lat.innerHTML = `${data.features[0].center[1]}˚`;
       long.innerHTML = `${data.features[0].center[0]}˚`;
-      mapboxgl.accessToken = 'pk.eyJ1IjoidGhlY29yZXltY2N1ZSIsImEiOiJja2tzYnRobnUxMXU0Mm9xbnFvNHkwbXVqIn0.qWWSsCZufFF1eBUzhcEKnw';
+      mapboxgl.accessToken = '';
       const map = new mapboxgl.Map({
         container: 'map',
         style: 'mapbox://styles/mapbox/streets-v9',
